@@ -24,7 +24,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: karlostcp
-          password: ${{ secrets.MI_PTA_DOCKERHUB2 }}
+          password: ${{ secrets.MI_PTA_DOCKERHUB }}
 
       # Paso 3: Crear la imagen de Docker desde el Dockerfile en el repositorio
       - name: Build Docker Image

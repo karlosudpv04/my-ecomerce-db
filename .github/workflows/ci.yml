@@ -8,7 +8,7 @@ on:
 
 
 env:
-  IMAGE_NAME: karlostcp/my-ecomerce-db
+  IMAGE_NAME: karlostcp/my-ecomerce-db #repo de dockerhub
   SHA: ${{ github.event.pull_request.head.sha || github.event.after }}
   DOCKERFILE_PATH: Dockerfile
 
@@ -28,7 +28,7 @@ jobs:
       - name: Log into registry
         uses: docker/login-action@v2
         with:
-          username: karlostcp
+          username: karlostcp #usuario de dockerhub
           password: ${{ secrets.MI_PTA_DOCKERHUB }}
 
       - name: Extract Docker metadata
